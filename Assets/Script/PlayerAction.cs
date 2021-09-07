@@ -6,7 +6,7 @@ public class PlayerAction : MonoBehaviour
 {
 
     float h; float v;
-    public float moveSpeed;
+    float moveSpeed = 5;
     Rigidbody2D rigid;
     void Awake()
     {
