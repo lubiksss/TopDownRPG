@@ -7,11 +7,12 @@ public class PlayerAction : MonoBehaviour
 
     float h; float v;
     bool isHorizonMove;
-    float moveSpeed = 5;
+    public float moveSpeed = 5;
     Vector3 dirVec;
     GameObject scanObject;
     Rigidbody2D rigid;
     Animator anim;
+    public GameManager manager;
     void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -27,14 +28,14 @@ public class PlayerAction : MonoBehaviour
     void Update()
     {
         // move value
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+        h = manager.isAction ? 0 : Input.GetAxisRaw("Horizontal");
+        v = manager.isAction ? 0 : Input.GetAxisRaw("Vertical");
 
         // Check Button Down & Up
-        bool hDown = Input.GetButtonDown("Horizontal");
-        bool vDown = Input.GetButtonDown("Vertical");
-        bool hUp = Input.GetButtonUp("Horizontal");
-        bool vUp = Input.GetButtonUp("Vertical");
+        bool hDown = manager.isAction ? false : Input.GetButtonDown("Horizontal");
+        bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal");
+        bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical");
+        bool vUp = manager.isAction ? false : Input.GetButtonUp("Vertical");
 
         // Check Horizontal Move
         if (hDown) { isHorizonMove = true; }
@@ -63,7 +64,8 @@ public class PlayerAction : MonoBehaviour
         //Scan Object
         if (Input.GetButtonDown("Jump") && scanObject != null)
         {
-            Debug.Log("this is: " + scanObject.name);
+            // Debug.Log("this is: " + scanObject.name);
+            manager.Action(scanObject);
         }
     }
     void FixedUpdate()
