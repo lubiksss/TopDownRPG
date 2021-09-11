@@ -1,7 +1,7 @@
 ## *참고
 <a href='https://www.youtube.com/watch?v=JY-KFx3OsJo&list=PLO-mt5Iu5TeYfyXsi6kzHK8kfjPvadC5u'>탑다운 2D RPG - 도트 타일맵으로 쉽게 준비하기 [유니티 기초 강좌 B20 + 에셋 다운로드]</a>
 
-Unity로 2D TopDown RPG을 만들었습니다. BOLT를 사용하지 않고 C# Script로만 구현했습니다. 지난 프로젝트들에서 BOLT를 사용하면서 Script를 사용하지 않은 것에 대한 답답함이 있었는데 이번 프로젝트를 하면서 Script로만 구현해보면서 두 가지 다 활용하는 게 좋을 것 같다고 생각했습니다.  
+Unity로 2D TopDown RPG를 만들었습니다. BOLT를 사용하지 않고 C# Script로만 구현했습니다. 지난 프로젝트들에서 BOLT를 사용하면서 Script를 사용하지 않은 것에 대한 답답함이 있었는데 이번 프로젝트를 하면서 Script로만 구현해보면서 두 가지 다 활용하는 게 좋을 것 같다고 생각했습니다.  
 이번에 만들면서 제일 배운 게 많습니다. 크게 세 가지를 배웠습니다.
 1. 퀘스트 시스템 구현
 2. NPC 대화 구현
