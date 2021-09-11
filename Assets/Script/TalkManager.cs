@@ -7,7 +7,7 @@ public class TalkManager : MonoBehaviour
     Dictionary<int, string[]> talkData;
     Dictionary<int, Sprite> portraitData;
     public Sprite[] portraitArray;
-
+    
 
     void Awake()
     {
@@ -22,8 +22,8 @@ public class TalkManager : MonoBehaviour
         talkData.Add(200, new string[] { "큰 나무다. 흔들어 볼까?" });
         talkData.Add(300, new string[] { "아무것도 들어있지 않다." });
         talkData.Add(400, new string[] { "너무 무거워서 밀 수 없다." });
-        talkData.Add(500, new string[] { "공부하기 싫다. 제연이 보고 싶다." });
-        talkData.Add(600, new string[] { "제연이랑 같이 호수 오고 싶다." });
+        talkData.Add(500, new string[] { "누군가 사용한 흔적이 있는 책상이다." });
+        talkData.Add(600, new string[] { "호수에 전설이 있다던데?" });
         talkData.Add(1000, new string[] { "안녕?:2", "이 곳에 처음 왔구나?:3" });
         talkData.Add(2000, new string[] { "이 호수에 전설이 있다던데..:4", "아냐 혼잣말이야..:7" });
 
