@@ -49,8 +49,8 @@ public class PlayerAction : MonoBehaviour
         // Check Button Down & Up
         //PC & Mobile
         bool hDown = manager.isAction ? false : Input.GetButtonDown("Horizontal") || right_Down || left_Down;
-        bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal") || up_Down || down_Down; ;
-        bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical") || right_Up || left_Up;
+        bool hUp = manager.isAction ? false : Input.GetButtonUp("Horizontal") || right_Up || left_Up;
+        bool vDown = manager.isAction ? false : Input.GetButtonDown("Vertical") || up_Down || down_Down;
         bool vUp = manager.isAction ? false : Input.GetButtonUp("Vertical") || up_Up || down_Up; ;
 
         // Check Horizontal Move
