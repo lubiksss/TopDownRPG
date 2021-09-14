@@ -5,7 +5,8 @@ Unity로 2D TopDown RPG를 만들었습니다. BOLT를 사용하지 않고 C# Sc
 이번에 만들면서 제일 배운 게 많습니다. 크게 세 가지를 배웠습니다.
 1. 퀘스트 시스템 구현
 2. NPC 대화 구현
-3. 모바일 건설을 위한 버튼으로 인풋 받기  
+3. 모바일 건설을 위한 버튼으로 인풋 받기
+4. Save, Load 시스템  
 
 지금까지 사용했던 Game Manager나 Sound Manager처럼 Quest Manager, Talk Manager를 구현하고 Game Manager를 통해 접근하는 방법을 배웠습니다. 또 이번에는 모바일 빌드를 목적으로 했기 때문에 일반 Unity에서 제공하는 PC 입력이 아닌 Button UI를 통해 입력을 직접 받았고, PC와 모바일에서 둘 다 호환 가능한 input system을 만들었습니다.  
 
